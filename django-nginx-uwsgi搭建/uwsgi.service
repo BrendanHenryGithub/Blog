@@ -1,0 +1,16 @@
+# uwsgi_path=/usr/local/bin/uwsgi
+# uwsgi_sites_dir=/etc/uwsgi/vassals
+
+
+[Unit]
+Description=uWSGI Emperor service
+
+[Service]
+ExecStart=%(uwsgi_path) --emperor=%(uwsgi_sites_dir)
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
