@@ -3,6 +3,8 @@
 >[参考手册](http://gitref.org/zh/remotes/#fetch)
 
 ## git命令行常用命令
+- git config --global user.name "NAME"  用于git的用户名设置 （必须设置了用户名和邮箱才能进行提交远端服务器的操作）
+- git config --global user.email "EMAIL"  用于git的用户邮箱设置 
 - git init 初始化一个本地git仓库
 - git clone url 克隆指定的仓库
 - git add filename 添加文件到缓存
