@@ -6,7 +6,15 @@
 grub-install --boot-directory=dir(default /boot) /dev/sdb
 
 ## grub2 的引导更新命令
-grub-mkconfig -o /.../grub.cfg
+- grub-mkconfig -o /.../grub.cfg
+- 更新引导至U盘：
+
+        sudo fdisk -l //确定u盘的设备号，/dev/sdb1
+        cd /mnt
+        sudo mkdir u
+        sudo mount /dev/sdb1 ./u   //挂载u盘至/mnt/u
+        sudo grub-mkconfig -o /mnt/u/boot/grub/grub.cfg
+
 
 # grub2的grub.cfg写法
 ## 1，引导Ubuntu iso
