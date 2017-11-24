@@ -127,5 +127,8 @@
 注意：启动图标存储于/usr/share/applications文件夹下
 编辑启动图标必须要有：Name,Exec,Icon,Type
 
+### 软链接建立
+ln -s 目标文件 软链接名 
+
 ## linux目录结构
 ![linux简明目录结构](https://dn-anything-about-doc.qbox.me/linux_base/4-1.png/logoblackfont)
