@@ -14,3 +14,11 @@
 
         service mysql start
         service tomcat7 start
+
+## 5. mysql、tomcat7服务开机启动以及取消命令：
+
+        sudo systemctl disable tomcat7
+        sudo systemctl enable tomcat7
+
+## 6. eclipse java EE 编辑器安装及配置：
+>[参考资料](http://blog.csdn.net/htttw/article/details/7596232)
