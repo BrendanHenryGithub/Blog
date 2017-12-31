@@ -103,7 +103,7 @@
 		退出当前用户:Ctrl+d
  		查看所属的用户组:groups <username>
  		查看/etc/group文件可看到所有的用户组
- 		将其他用户加入到sudo用户组:sudo usermod -G sudo <username>(需要登入sudo组先)
+ 		将其他用户加入到sudo用户组:sudo usermod -aG sudo <username>(需要登入sudo组先)
 		删除用户:sudo deluser <username>
 
 ### 文件权限操作

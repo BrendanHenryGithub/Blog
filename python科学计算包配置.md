@@ -20,6 +20,9 @@
         trusted-host=mirrors.aliyun.com
         index-url=http://mirrors.aliyun.com/pypi/simple/
 
+        或者手动启用指定源：
+        pip install --trusted-host=mirrors.aliyun.com -i http://mirrors.aliyun.com/pypi/simple/
+
 2.2 windows下在 %HOMEPATH% 下建立pip 文件夹，在里面建立pip.ini 文件，并添加如下内容：
 
         [global]
