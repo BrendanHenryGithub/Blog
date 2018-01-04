@@ -103,7 +103,7 @@
 		退出当前用户:Ctrl+d
  		查看所属的用户组:groups <username>
  		查看/etc/group文件可看到所有的用户组
- 		将其他用户加入到sudo用户组:sudo usermod -G sudo <username>(需要登入sudo组先)
+ 		将其他用户加入到sudo用户组:sudo usermod -aG sudo <username>(需要登入sudo组先)
 		删除用户:sudo deluser <username>
 
 ### 文件权限操作
@@ -126,6 +126,9 @@
 
 注意：启动图标存储于/usr/share/applications文件夹下
 编辑启动图标必须要有：Name,Exec,Icon,Type
+
+### 软链接建立
+ln -s 目标文件 软链接名 
 
 ## linux目录结构
 ![linux简明目录结构](https://dn-anything-about-doc.qbox.me/linux_base/4-1.png/logoblackfont)
