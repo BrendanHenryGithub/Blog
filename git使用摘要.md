@@ -27,6 +27,15 @@
         ```
         git config --global alias.lg 'log --oneline --graph --decorate --all'
         ```
+    3. 设置代理：
+        ```
+        开启：
+        git config --global https.proxy http://127.0.0.1:1080
+        git config --global https.proxy https://127.0.0.1:1080
+        关闭：
+        git config --global --unset http.proxy
+        git config --global --unset https.proxy
+        ```
 6. 检查配置：git config --list
 
 ## git 基础命令
